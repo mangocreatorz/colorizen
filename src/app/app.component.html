@@ -1,0 +1,628 @@
+<div class="preloader">
+  <div class="loader">
+    <div class="ytp-spinner">
+      <div class="ytp-spinner-container">
+        <div class="ytp-spinner-rotator">
+          <div class="ytp-spinner-left">
+            <div class="ytp-spinner-circle"></div>
+          </div>
+          <div class="ytp-spinner-right">
+            <div class="ytp-spinner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for successfull upload -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">You did it!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-sm-center">Your photos are already processed. Expect them in your mail!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="aboutPhotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutPhotoLabel">How colorizen works?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Generative adversarial networks(GANs) - are a form of generative models. These models consist of two neural networks, one of which is designated as a generator(G) and a discriminator(D). These models are trained against each other. The purpose of the generator is to generate fake samples from the input Gaussian noise.  Unlike a generator, the discriminator model evaluates which data is fake and which is genuine.
+        </p>
+        <img src="../assets/images/scheme.jpeg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="privatePolicyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privatePolicyModalLabel">Private Policy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Private Policy</h2>
+        <p>Effective date: December 15, 2018
+          colorizen ("us", "we", or "our") operates the colorizen website (the "Service").
+          This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+          We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from colorizen</p>
+        <h2>Information Collection and Use</h2>
+        <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+        <h3>Types of Data Collected</h3>
+        <h4>Personal Data</h4>
+        <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+        <ul>
+          <li>Email address</li>
+          <li>Your photos</li>
+        </ul>
+        <h3>ATTENTION!</h3>
+        <p>We do not collect or use cookies. We do not collect data about how you use our site.</p>
+        <h2>Security Of Data</h2>
+        <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. Therefore, we destroy and do not store your files on local storage for more than two weeks.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us: colorizen@gmail.com</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--====== PRELOADER PART ENDS ======-->
+
+<!--====== HEADER PART START ======-->
+
+<header class="header-area">
+  <div class="navbar-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="../assets/images/logo.svg" alt="Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+              <ul id="nav" class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="page-scroll" href="#home">Main</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#about">Examples</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#facts">How it works?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#blog">Blog</a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                  <a class="page-scroll" href="#blog">Blog</a>-->
+<!--                </li>-->
+              </ul>
+            </div> <!-- navbar collapse -->
+
+            <div class="navbar-btn d-none d-sm-inline-block">
+              <a class="main-btn" data-scroll-nav="0" href="#pricing">Question?</a>
+            </div>
+          </nav> <!-- navbar -->
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- navbar area -->
+
+  <div id="home" class="header-hero bg_cover" style="background-image: url('../assets/images/banner-bg.svg')">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="header-hero-content text-center">
+            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Colourizen</h3>
+            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">AI-service, that colors black and white photos</h2>
+           </div> <!-- header hero content -->
+        </div>
+      </div> <!-- row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
+            <app-upload-form class="uploading"></app-upload-form>
+          </div> <!-- header hero image -->
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+    <div id="particles-1" class="particles"></div>
+  </div> <!-- header hero -->
+</header>
+
+<!--====== HEADER PART ENDS ======-->
+
+
+<!--====== SERVICES PART START ======-->
+
+<section id="features" class="services-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <h3 class="title">Colorize.cc - AI-service, <span> that colors black and white photos</span></h3>
+        </div> <!-- section title -->
+      </div>
+    </div> <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="services-icon">
+            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
+            <i class="lni-baloon"></i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title"><a href="#">Clean</a></h4>
+            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="services-icon">
+            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+            <i class="lni-cog"></i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title"><a href="#">Robust</a></h4>
+            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+          <div class="services-icon">
+            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+            <i class="lni-bolt-alt"></i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title"><a href="#">Powerful</a></h4>
+            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single services -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<!--====== SERVICES PART ENDS ======-->
+
+<!--====== ABOUT PART START ======-->
+
+<section id="about" class="about-area pt-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-title">
+            <div class="line"></div>
+            <h3 class="title">The magic of <span>new technologies</span></h3>
+          </div> <!-- section title -->
+          <p class="text">In a few clicks, you can touch the magic of machine learning technologies</p>
+<!--          <a href="#" class="main-btn">Try it Free</a>-->
+        </div> <!-- about content -->
+      </div>
+      <div class="col-lg-6">
+        <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <two-up class="my-two-up">
+            <div>
+              <img src="assets/images/bw_1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="assets/images/bw_2.jpg" alt="" />
+            </div>
+          </two-up>
+        </div> <!-- about image -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+  <div class="about-shape-1">
+    <img src="assets/images/about-shape-1.svg" alt="shape">
+  </div>
+</section>
+
+<!--====== ABOUT PART ENDS ======-->
+
+<!--====== ABOUT PART START ======-->
+
+<section class="about-area pt-70">
+  <div class="about-shape-2">
+    <img src="assets/images/about-shape-2.svg" alt="shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 order-lg-last">
+        <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-title">
+            <div class="line"></div>
+            <h3 class="title">Coloring black and white <span> photos</span></h3>
+          </div> <!-- section title -->
+          <p class="text">Color hundreds of your family photos in minutes.</p>
+<!--          <a href="#" class="main-btn">Try it Free</a>-->
+        </div> <!-- about content -->
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <two-up class="my-two-up">
+            <div>
+              <img src="assets/images/bw_3.jpg" alt="" />
+            </div>
+            <div>
+              <img src="assets/images/bw_4.jpg" alt="" />
+            </div>
+          </two-up>
+        </div> <!-- about image -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+
+<!--====== ABOUT PART START ======-->
+
+<section class="about-area pt-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-title">
+            <div class="line"></div>
+            <h3 class="title"><span>Colorizen</span> restores photos</h3>
+          </div> <!-- section title -->
+          <p class="text">Removes noise, restores face, general recovery.</p>
+        </div> <!-- about content -->
+      </div>
+      <div class="col-lg-6">
+        <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+          <two-up class="my-two-up">
+            <div>
+              <img src="assets/images/bw_5.jpg" alt="" />
+            </div>
+            <div>
+              <img src="assets/images/bw_6.jpg" alt="" />
+            </div>
+          </two-up>
+        </div> <!-- about image -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+  <div class="about-shape-1">
+    <img src="assets/images/about-shape-1.svg" alt="shape">
+  </div>
+</section>
+
+<!--====== ABOUT PART ENDS ======-->
+
+
+<!--====== ABOUT PART ENDS ======-->
+
+<!--====== VIDEO COUNTER PART START ======-->
+
+<section id="facts" class="video-counter pt-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img class="dots" src="assets/images/dots.svg" alt="dots">
+          <div class="video-wrapper">
+            <div class="video-image">
+              <img src="assets/images/video.png" alt="video">
+            </div>
+            <div class="video-icon">
+              <a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup"><i class="lni-play"></i></a>
+            </div>
+          </div> <!-- video wrapper -->
+        </div> <!-- video content -->
+      </div>
+      <div class="col-lg-6">
+        <div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+          <div class="counter-content">
+            <div class="section-title">
+              <div class="line"></div>
+              <h3 class="title">How does <span> it work?</span></h3>
+            </div> <!-- section title -->
+            <p class="text">We use state of the art technologies in the field of artificial intelligence and tried to get the most accurate results.</p>
+          </div> <!-- counter content -->
+          <div class="row no-gutters">
+            <div class="col-4">
+              <div class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
+                <div class="counter-items text-center">
+                  <span class="count"><span class="counter">96</span>%</span>
+                  <p class="text">Accuracy</p>
+                </div>
+              </div> <!-- single counter -->
+            </div>
+            <div class="col-4">
+              <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
+                <div class="counter-items text-center">
+                  <span class="count"><span class="counter">10 </span> сек.</span>
+                  <p class="text">Time of processing</p>
+                </div>
+              </div> <!-- single counter -->
+            </div>
+            <div class="col-4">
+              <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
+                <div class="counter-items text-center">
+                  <span class="count"><span class="counter">424</span></span>
+                  <p class="text">Photos ready</p>
+                </div>
+              </div> <!-- single counter -->
+            </div>
+          </div> <!-- row -->
+        </div> <!-- counter wrapper -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<!--====== VIDEO COUNTER PART ENDS ======-->
+
+<!--====== TEAM PART START ======-->
+
+<section id="team" class="team-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="section-title text-center pb-30">
+          <div class="line m-auto"></div>
+          <h3 class="title">Team</h3>
+        </div> <!-- section title -->
+      </div>
+    </div> <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-7 col-sm-8">
+        <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="team-image">
+            <img src="assets/images/team-1.png" alt="Team">
+            <div class="social">
+              <ul>
+                <li><a href="https://github.com/mangocreatorz"><i class="lni-github-original"></i></a></li>
+                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="holder-name"><a href="#">Kirichenko Sergey</a></h5>
+            <p class="text">UX/UI degigner, Frontend developer</p>
+          </div>
+        </div> <!-- single team -->
+      </div>
+      <div class="col-lg-3 col-md-7 col-sm-8">
+        <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="team-image">
+            <img src="assets/images/team-2.jpg" alt="Team">
+            <div class="social">
+              <ul>
+                <li><a href="https://github.com/macsifan"><i class="lni-github-original"></i></a></li>
+                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="holder-name"><a href="#">Kolesnikov Maxim</a></h5>
+            <p class="text">DSML engineer</p>
+          </div>
+        </div> <!-- single team -->
+      </div>
+      <div class="col-lg-3 col-md-7 col-sm-8">
+        <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+          <div class="team-image">
+            <img src="assets/images/team-3.png" alt="Team">
+            <div class="social">
+              <ul>
+                <li><a href="https://github.com/kdiAAA"><i class="lni-github-original"></i></a></li>
+                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="holder-name"><a href="#">Karmanov Adilbek</a></h5>
+            <p class="text">DSML engineer</p>
+          </div>
+        </div> <!-- single team -->
+      </div>
+
+      <div class="col-lg-3 col-md-7 col-sm-8">
+        <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+          <div class="team-image">
+            <img src="assets/images/team-4.jpg" alt="Team">
+            <div class="social">
+              <ul>
+                <li><a href="https://github.com/MyrzabekDarkhan"><i class="lni-github-original"></i></a></li>
+                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-content">
+            <h5 class="holder-name"><a href="#">Myrzabek Darkhan</a></h5>
+            <p class="text">Backend developer</p>
+          </div>
+        </div> <!-- single team -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<!--====== TEAM PART ENDS ======-->
+
+
+<!--====== BLOG PART START ======-->
+
+<section id="blog" class="blog-area pt-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-title pb-35">
+          <div class="line"></div>
+          <h3 class="title"><span>Recommend to</span> read</h3>
+        </div> <!-- section title -->
+      </div>
+    </div> <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7">
+        <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="blog-image">
+            <img src="assets/images/blog-1.jpg" alt="blog">
+          </div>
+          <div class="blog-content">
+            <p class="text">How colorizen works?</p>
+            <a class="more" href="#" data-toggle="modal" data-target="#aboutPhotoModal">Learn <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single blog -->
+      </div>
+      <div class="col-lg-4 col-md-7">
+        <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="blog-image">
+            <img src="assets/images/blog-2.jpg" alt="blog">
+          </div>
+          <div class="blog-content">
+
+            <p class="text">Корпоративные решения</p>
+            <a class="more" href="#">Learn <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single blog -->
+      </div>
+      <div class="col-lg-4 col-md-7">
+        <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+          <div class="blog-image">
+            <img src="assets/images/blog-3.jpg" alt="blog">
+          </div>
+          <div class="blog-content">
+
+            <p class="text">Private Policy</p>
+            <a class="more" href="#" data-toggle="modal" data-target="#privatePolicyModal">Learn <i class="lni-chevron-right"></i></a>
+          </div>
+        </div> <!-- single blog -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<!--====== BLOG PART ENDS ======-->
+
+<!--====== FOOTER PART START ======-->
+
+<footer id="footer" class="footer-area pt-120">
+  <div class="container">
+    <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="subscribe-content mt-45">
+            <h2 class="subscribe-title"><span>Subscribe to news</span></h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="subscribe-form mt-50">
+            <form action="#">
+              <input type="text" placeholder="Put your email here">
+              <button class="main-btn">Subscribe!</button>
+            </form>
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- subscribe area -->
+    <div class="footer-widget pb-100">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-8">
+          <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <a class="logo" href="#">
+              <img src="assets/images/logo.svg" alt="logo">
+            </a>
+            <p class="text">AI-service, that colors black and white photos. Designed with love ❤️</p>
+            <ul class="social">
+              <li><a href="#"><i class="lni-github-original"></i></a></li>
+              <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+            </ul>
+          </div> <!-- footer about -->
+        </div>
+        <div class="col-lg-5 col-md-7 col-sm-7">
+          <div class="footer-link d-flex mt-50 justify-content-md-between">
+            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="footer-title">
+                <h4 class="title">Sections</h4>
+              </div>
+              <ul class="link">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div> <!-- footer wrapper -->
+          </div> <!-- footer link -->
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-5">
+          <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+            <div class="footer-title">
+              <h4 class="title">Connect</h4>
+            </div>
+            <ul class="contact">
+              <li>help@colorizen.io</li>
+              <li>colorizen.io</li>
+              <li>Abylai Khan, 1/1 <br> Kaskelen, Kazakhstan.</li>
+            </ul>
+          </div> <!-- footer contact -->
+        </div>
+      </div> <!-- row -->
+    </div> <!-- footer widget -->
+
+  </div> <!-- container -->
+  <div id="particles-2"></div>
+</footer>
+
+<!--====== FOOTER PART ENDS ======-->
+
+<!--====== BACK TOP TOP PART START ======-->
+
+<a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
