@@ -9,9 +9,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {UploadFormComponent} from './upload-form/upload-form.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

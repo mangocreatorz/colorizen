@@ -60,7 +60,7 @@ export class UploadFormComponent implements OnInit {
   }
 
   getHello() {
-    this.http.get('http://localhost:8080/api/testInfo').subscribe(data=>{
+    this.http.get('http://colorizen-server.herokuapp.com/api/testInfo').subscribe(data=>{
       console.log(data)
     })
     setTimeout(()=>{
@@ -70,10 +70,9 @@ export class UploadFormComponent implements OnInit {
   }
 
   sendPhotos(event) {
-
     let body = this.arrayOfImages
 
-    this.http.post('http://localhost:8080/api/newPhotoUpload', {
+    this.http.post('http://colorizen-server.herokuapp.com/api/newPhotoUpload', {
       "email": this.userEmail,
       "data": this.arrayOfImages
     }).subscribe(data=>{
