@@ -19,6 +19,7 @@ export class UploadFormComponent implements OnInit {
   // @ts-ignore
   form: FormGroup
   exceptionThrow;
+  statusMessage = ''
 
   // @ts-ignore
 
@@ -71,6 +72,9 @@ export class UploadFormComponent implements OnInit {
 
   sendPhotos(event) {
     let body = this.arrayOfImages
+    this.statusMessage = 'Your photos have been sent for processing!'
+    this.imageCount = false
+
 
     this.http.post('http://colorizen-server.herokuapp.com/api/newPhotoUpload', {
       "email": this.userEmail,

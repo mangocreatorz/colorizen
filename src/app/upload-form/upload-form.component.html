@@ -2,9 +2,7 @@
 
 
 <div class="box">
-
   <form [formGroup]="form" class="form-inputs">
-
     <div class="inputs">
       <input formControlName="emailInput" type='text' placeholder="Your email" [(ngModel)]="userEmail" class="emailInput" [email]="true">
       <p class="validation-text" *ngIf="form.controls['emailInput'].invalid && form.controls['emailInput'].touched" [ngStyle]="{'color': 'red', 'margin': '0', 'margin-top': '-20px', 'margin-bottom': '20px'}">Enter correct email, dude</p>
@@ -17,10 +15,11 @@
   <p>Supported files: <strong>JPG</strong>, <strong>JPEG</strong>, <strong>PNG</strong></p>
   <p>Maximum file size: <strong>5 Mb</strong></p>
   <p [ngStyle]="{'color': 'white', 'margin': '0'}" *ngIf="imageCount">Selected files: {{imageCount}}</p>
+  <p [ngStyle]="{'color': 'white', 'margin': '0'}">{{statusMessage}}</p>
 
   <div class="controls">
-    <button class="controlButton" id="resetBtn" (click)="getHello()">Reset</button>
-    <button (click)="sendPhotos($event)" [disabled]="form.invalid" class="controlButton" data-toggle="modal" data-target="#exampleModalCenter" >Make them bright!</button>
+    <button class="controlButton" id="resetBtn" (click)="resetForm()">Reset</button>
+    <button (click)="sendPhotos($event)" [disabled]="form.invalid" class="controlButton">Make them bright!</button>
   </div>
 </div>
 
